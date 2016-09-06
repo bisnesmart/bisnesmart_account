@@ -24,21 +24,22 @@
     "category": "Accounting",
     "website": "http://www.bisnesmart.com",
     'description' : """
-    Payment term next days2 fix.
-    ----------------------------
-    When computing a value for a payment day, the next instance of the value
-    in the field days2 is the one selected, instead of the one of the month after.
+Payment term next days2 fix.
+============================
 
-    Example:
-    --------
+When computing a value for a payment day, the next instance of the value
+in the field days2 is the one selected, instead of the one of the month after.
 
-    days = 30
-    days2 = 3
-    Current date : 03-01-2016
+Example:
+--------
 
-    30 days after, it will be 02-02-2016. With the default odoo behaviour,
-    the day computed for the payment would be 03-03-2016, but with this module
-    it will be 03-02-2016.
+days = 30
+days2 = 3
+Current date : 03-01-2016
+
+30 days after, it will be 02-02-2016. With the default odoo behaviour,
+the day computed for the payment would be 03-03-2016, but with this module
+it will be 03-02-2016.
 
     """,
     "depends": [
